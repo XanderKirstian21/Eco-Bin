@@ -1,0 +1,185 @@
+@import url('https://fonts.cdnfonts.com/css/copperplate-gothic-std');
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.container {
+    position: relative; /* Position the container */
+}
+
+.BgImg {
+  width: 100vw; /* Set width to 100% of viewport width */
+  height: 100vh; /* Set height to 100% of viewport height */
+  object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
+  position: fixed; /* Fixed positioning */
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+  /* Style for the navigation buttons */
+  .fieldset-wrapper {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: right;
+    position: relative; /* Establish stacking context */
+    z-index: 9999; /* Set a high z-index value */
+  }
+
+  .fieldset-wrapper fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+
+  .fieldset-wrapper label {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #333;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+  }
+
+  .fieldset-wrapper label:hover {
+    background-color: #394D3F; /* Add hover effect */
+    color: white;
+    border-radius: 20px
+  }
+
+  /* Hide radio buttons */
+  .sr-only {
+    position: absolute;
+    visibility: hidden;
+    clip: rect(0 0 0 0);
+  }
+  .menu {
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    font-family: Arial, sans-serif;
+  }
+  .menu img {
+    margin-left: 40px;
+    width: 70px; 
+    height: auto; 
+    transform: scale(2);
+  }
+  .fieldset-wrapper2 {
+    top: 130px;
+    left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: left;
+    position: relative; /* Establish stacking context */
+    z-index: 9999; /* Set a high z-index value */
+  }
+
+  .fieldset-wrapper2 fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+
+  .fieldset-wrapper2 label {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+  }
+
+  .fieldset-wrapper2 label:hover {
+    background-color: #394D3F; /* Add hover effect */
+    color: white;
+    border-radius: 20px
+    
+  }
+  .container1 {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 500px;
+    width: 580px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    margin-right: 30px; /* Add a small gap on the right side */
+    z-index: -1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 55%;
+    right: 100px; /* Adjust this value to control the distance from the right side */
+    transform: translateY(-50%);
+  }
+  .title {
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+    letter-spacing: 8px;
+    margin-bottom: 30px;
+    color: #006400;
+  }
+  form {
+    margin-bottom: 20px;
+  }
+  .input-box {
+    margin-bottom: 10px;
+  }
+  label {
+    display: block;
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: #333333;
+    margin-bottom: 5px;
+  }
+  input[type="email"], input[type="password"], input[type="con"], input[type="bday"] {
+    width: 94%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    flex-grow: 1; /* Allow the input to grow to fill available space */
+    border: none; /* Remove border */
+    border-bottom: 1px solid black; /* Add a bottom border */
+    background-color: transparent; /* Make background transparent */
+    outline: none; /* Remove outline */
+    color: #333333;
+  }
+  .input-box {
+    margin-bottom: 35px; /* Adjust the value to add desired space */
+}
+  .button-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .update-btn{
+    letter-spacing: 4px;
+    width: 100%;
+    padding: 10px;
+    background-color: #006400;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .update-btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black
+  }
+  a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color from parent element */
+    display: inline-block; /* Maintain block display for label styling */
+    padding: 1px 10px; /* Add padding to match label design */
+}

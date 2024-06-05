@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>About</title>
+    <link rel="stylesheet" href="About.css">
+    <link href="https://fonts.cdnfonts.com/css/copperplate-gothic-std" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img class= "BgImg" src="\Assets\about_bg.png" alt="Background Image">
+    </div>
+        <div class="fieldset-wrapper">
+            <fieldset>
+                <!-- radio buttons for each of the @keyframes above -->
+                <input type="radio" checked class="sr-only">
+                <label for="home"><a href="Home.html">HOME</a></label>
+        
+                <input type="radio" class="sr-only">
+                <label for="about"><a href="About.html">ABOUT</a></label>
+        
+                <input type="radio" class="sr-only">
+                <label for="account"><a href="Account.html">ACCOUNT</a></label>
+        
+                <input type="radio" class="sr-only">
+                <label for="leaderboard"><a href="Leaderboard.html">LEADERBOARD</a></label>
+
+                <input type="radio" class="sr-only">
+        <button id="signoutbutton">SIGN OUT</button>
+              </fieldset>
+        </div>
+        <div class="menu">
+            <img src="\Assets\EcoBin.gif" alt="Logo"> 
+          </div>
+        <div class="card1"> 
+            <img src="\Assets\card.png">
+            <div class="ctxt1">
+                <p>At Eco-Bin, we believe in the power of</p>
+                <p>innovation to address environmental</p>
+                <p>challenges, and our mission is clear: to</p>
+                <p>transform recycling into a rewarding and</p>
+                <p>engaging experience for everyone.</p>
+                <p>Commonly referred to as a reverse</p>
+                <p>vending machine (RVM), Eco-Bin is our</p>
+                <p>groundbreaking solution designed to make</p>
+                <p>a positive impact on our planet.</p>
+            </div>
+        </div>
+        <h3 class="ab">ABOUT</h3>
+        <h1 class="eco">ECO-BIN</h1>
+        <div class="card2"> 
+            <img src="\Assets\card.png">
+            <div class="ctxt2">
+                <p>Our innovative reverse vending machines</p>
+                <p>provide a quick, easy, and encouraging</p>
+                <p>way to recycle PET bottles and beverage</p>
+                <p>containers. We understand the importance</p>
+                <p>of efficient waste sorting processes to</p>
+                <p>improve overall recycling efforts, and Eco-Bin</p>
+                <p>stands at the forefront of this green revolution.</p>
+            </div>
+        </div>
+        <h1 class="red">READY TO RECYCLE?</h1>
+        <div class="txt2">
+            <p>Visit Eco-Bin at Dampalit Barangay Hall, M.</p>
+            <p>Sioson St, Malabon City, 1470 Metro Manila,</p>
+            <p>and join us on a journey to redefine recycling,</p>
+            <p>one PET bottle at a time. Together, let's</p>
+            <p>create a cleaner, greener future for</p>
+            <p>generations to come.</p>
+        </div>
+
+        <script>
+            let SignoutBtn = document.getElementById('signoutbutton');
+
+let Signout = () => {
+    sessionStorage.removeItem("user-creds");
+    sessionStorage.removeItem("user-info");
+    window.location.href = 'login.html';  // Redirect to login page after sign out
+}
+
+let CheckCred = () => {
+    if (!sessionStorage.getItem("user-creds"))
+        window.location.href = 'login.html';
+}
+
+window.addEventListener('load', CheckCred);
+SignoutBtn.addEventListener('click', Signout);
+        </script>
+</body>
+</html>

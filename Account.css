@@ -1,0 +1,225 @@
+@import url('https://fonts.cdnfonts.com/css/copperplate-gothic-std');
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    position: relative; /* Position the container */
+}
+
+.BgImg {
+    width: 100vw; /* Set width to 100% of viewport width */
+    height: 100vh; /* Set height to 100% of viewport height */
+    object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
+    position: fixed; /* Fixed positioning */
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Style for the navigation buttons */
+.fieldset-wrapper {
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: right;
+    position: relative; /* Establish stacking context */
+    z-index: 9999; /* Set a high z-index value */
+}
+
+.fieldset-wrapper fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.fieldset-wrapper label {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #333;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.fieldset-wrapper label:hover {
+    background-color: #394D3F; /* Add hover effect */
+    color: white;
+    border-radius: 20px
+}
+.fieldset-wrapper label, button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #333;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+  }
+
+  .fieldset-wrapper label:hover , button:hover {
+    background-color: #394D3F; /* Add hover effect */
+    color: white;
+    border-radius: 20px
+  }
+
+/* Hide radio buttons */
+.sr-only {
+    position: absolute;
+    visibility: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.menu {
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    position: fixed;
+}
+
+.menu img {
+    margin-left: 40px;
+    width: 70px;
+    height: auto;
+    transform: scale(2);
+}
+
+.fieldset-wrapper2 {
+    top: 130px;
+    left: 100px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: left;
+    position: relative; /* Establish stacking context */
+    z-index: 9999; /* Set a high z-index value */
+}
+
+.fieldset-wrapper2 fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.fieldset-wrapper2 label {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.fieldset-wrapper2 label:hover {
+    background-color: #394D3F; /* Add hover effect */
+    color: white;
+    border-radius: 20px
+}
+
+.acct {
+    font-family: 'Copperplate Gothic Std', sans-serif;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 50px;
+    text-align: center;
+    bottom: 60px;
+    left: 15%;
+    position: relative;
+    z-index: 1;
+}
+
+.card1 {
+    position: relative;
+    bottom: 92px;
+    left: 42%;
+    transform: scale(1);
+}
+
+.photo-wraper {
+    bottom: 435px;
+    left: 14%;
+    position: relative;
+    z-index: 9999;
+    overflow: hidden;
+    text-align: center;
+}
+
+.photo-wraper .photo {
+    max-width: 250px;
+    max-height: 250px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+.photo-wraper .photo img {
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: initial;
+}
+
+.button {
+    left: 16%;
+    bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 100px;
+    padding: 5px;
+    margin: 10px auto;
+    z-index: 9999;
+}
+
+.button input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.username {
+    position: relative;
+    bottom: 550px;
+    left: 14%;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.email {
+    position: relative;
+    bottom: 540px;
+    left: 14%;
+    font-size: 13px;
+    color: black;
+    text-align: center;
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color from parent element */
+    display: inline-block; /* Maintain block display for label styling */
+    padding: 1px 10px; /* Add padding to match label design */
+}
+.sr-only {
+    position: absolute;
+    visibility: hidden;
+    clip: rect(0 0 0 0);
+}

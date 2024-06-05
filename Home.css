@@ -1,0 +1,133 @@
+@import url('https://fonts.cdnfonts.com/css/copperplate-gothic-std');
+                
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.container {
+    position: relative; /* Position the container */
+}
+
+.BgImg {
+    width: 100%; /* Make sure image doesn't overflow horizontally */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Display image as a block element */
+    position: absolute; /* Position the image absolutely */
+    top: -20px; /* Place the image at the top */
+    left: 0; /* Place the image at the left */
+    z-index: -1; /* Put the image behind other elements */
+}
+  /* Style for the navigation buttons */
+  .fieldset-wrapper {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: right;
+    position: relative; /* Establish stacking context */
+    z-index: 9999; /* Set a high z-index value */
+  }
+
+  .fieldset-wrapper fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+
+  .fieldset-wrapper label, button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #333;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+  }
+
+  .fieldset-wrapper label:hover , button:hover {
+    background-color: #394D3F; /* Add hover effect */
+    color: white;
+    border-radius: 20px
+  }
+
+  /* Hide radio buttons */
+  .sr-only {
+    position: absolute;
+    visibility: hidden;
+    clip: rect(0 0 0 0);
+  }
+  .cir {
+    position: absolute;
+    top: 38%;
+    left: 18%;
+    transform: scale(2.3);
+    z-index: -1;
+}
+.hlogo {
+    position: absolute;
+    top: 7%;
+    left: 9%;
+    z-index: -1;
+}
+.wel {
+    font-family: 'Copperplate Gothic Std', sans-serif;
+    font-size: xx-large;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 40%;
+    right: 18%;
+    z-index: -1;
+}
+.txt {
+    font-family: 'Copperplate Gothic Std', sans-serif;
+    font-size: small;
+    letter-spacing: 2px;
+    position: absolute;
+    color: white;
+    top: 65%;
+    right: 20%;
+    z-index: -1;
+}
+.rounded-square {
+    position: absolute;
+    top: 130%;
+    left: 13%;
+    width: 900px; /* Adjust the width of the square */
+    height: 300px; /* Adjust the height of the square */
+    opacity: 0.4;
+    background-color: white; /* Color of the square */
+    border-radius: 30px; /* Adjust the border radius for rounded corners */
+    transform: translate(4.2%, 20%); /* Adjust the translation */
+  }
+  .rec {
+    font-family: 'Copperplate Gothic Std', sans-serif;
+    letter-spacing: 2px;
+    position: absolute;
+    color: white;
+    top: 145%;
+    left: 18%;
+    z-index: -1;
+  }
+  .add {
+    font-family: 'Copperplate Gothic Std', sans-serif;
+    letter-spacing: 2px;
+    position: absolute;
+    color: white;
+    top: 160%;
+    left: 18%;
+    z-index: -1;
+  }
+  .bot {
+    position: absolute;
+    top: 135%;
+    right: 18%;
+    z-index: 999;
+  }
+  a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color from parent element */
+    display: inline-block; /* Maintain block display for label styling */
+    padding: 1px 10px; /* Add padding to match label design */
+}

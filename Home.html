@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link rel="stylesheet" href="Home.css">
+    <link href="https://fonts.cdnfonts.com/css/copperplate-gothic-std" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <img class="BgImg" src="Assets/home_bg.png" alt="Background Image">
+</div>
+<div class="fieldset-wrapper">
+    <fieldset>
+        <!-- radio buttons for each of the @keyframes above -->
+        <input type="radio" checked class="sr-only">
+        <label for="home"><a href="Home.html">HOME</a></label>
+
+        <input type="radio" class="sr-only">
+        <label for="about"><a href="About.html">ABOUT</a></label>
+
+        <input type="radio" class="sr-only">
+        <label for="account"><a href="Account.html">ACCOUNT</a></label>
+
+        <input type="radio" class="sr-only">
+        <label for="leaderboard"><a href="Leaderboard.html">LEADERBOARD</a></label>
+
+        <input type="radio" class="sr-only">
+        <button id="signoutbutton">SIGN OUT</button>
+    </fieldset>
+</div>
+<img class="cir" src="Assets/circlebg.png">
+<img class="hlogo" src="Assets/EcoBin.gif">
+<p class="wel">WELCOME TO ECO-BIN!</p>
+<div class="txt">
+    <p>INTRODUCING THE "ECO-BIN," A REVERSE VENDING</p>
+    <p>MACHINE (RVM) REVOLUTIONIZING PLASTIC BOTTLE</p>
+    <p>RECYCLING. THE ECO-BIN INCENTIVIZES</p>
+    <p>EFFORTLESS PET BOTTLE RECYCLING BY PROVIDING</p>
+    <p>MONETARY REWARDS, ENCOURAGE ENGAGEMENT</p>
+    <p>THROUGH A LEADERBOARD. INTEGRATED INTO</p>
+    <p>ESTABLISHED WASTE MANAGEMENT SYSTEMS, THIS</p>
+    <p>INNOVATIVE SYSTEM NOT ONLY ENHANCES</p>
+    <p>RECYCLING EFFICIENCY BUT ALSO CONTRIBUTES TO</p>
+    <p>A SUSTAINABLE FUTURE BY REWARDING ECO-</p>
+    <p>FRIENDLY ACTIONS THROUGH E-WALLETS LIKE</p>
+    <p>GCASH OR MAYA.</p>
+</div>
+<div class="rounded-square"></div>
+<h1 class="rec">RECYCLE WITH US</h1>
+<div class="add">
+    <p>VISIT ECO-BIN ON DAMPALIT BARANGAY</p>
+    <p>HALL IN M. SIOSON ST, MALABON CITY,</p>
+    <p>1470 METRO MANILA</p>
+</div>
+<img class="bot" src="Assets/bottles.png">
+
+</body>
+<script>
+    let SignoutBtn = document.getElementById('signoutbutton');
+
+    let Signout = () => {
+        sessionStorage.removeItem("user-creds");
+        sessionStorage.removeItem("user-info");
+        window.location.href = 'login.html';  // Redirect to login page after sign out
+    }
+
+    let CheckCred = () => {
+        if (!sessionStorage.getItem("user-creds"))
+            window.location.href = 'login.html';
+    }
+
+    window.addEventListener('load', CheckCred);
+    SignoutBtn.addEventListener('click', Signout);
+</script>
+</html>
